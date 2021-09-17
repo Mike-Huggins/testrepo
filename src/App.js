@@ -1,4 +1,3 @@
-import "./App.css";
 import { LikeDislike } from "./LikeDislike";
 
 function App() {

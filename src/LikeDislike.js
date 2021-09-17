@@ -47,10 +47,11 @@ export const LikeDislike = () => {
             onClick={handleLikeClick}
           >
             <ThumbUpIcon
+              data-testid="thumbsUpIcon"
               className="-ml-1 mr-2 h-5 w-5 text-gray-400"
               aria-hidden="true"
             />
-            {liked ? "Liked" : "Like "}
+            {liked ? "Liked" : "Like"}
           </button>
           <span className="-ml-px relative inline-flex items-center px-3 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
             {like}
@@ -65,10 +66,11 @@ export const LikeDislike = () => {
             onClick={handleDislikeClick}
           >
             <ThumbDownIcon
+              data-testid="thumbsDownIcon"
               className="-ml-1 mr-2 h-5 w-5 text-gray-400"
               aria-hidden="true"
             />
-            {disliked ? "Disliked" : "Dislike "}
+            {disliked ? "Disliked" : "Dislike"}
           </button>
           <span className="-ml-px relative inline-flex items-center px-3 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
             {dislike}
